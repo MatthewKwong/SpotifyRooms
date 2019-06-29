@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'circular';
+  src: url('circular.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'circular-bold';
+  src: url('circular-bold.ttf'); /* IE9 Compat Modes */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.section{
+  height: 100vh;
+  border:solid 2px black;
+  box-sizing: border-box;
+}
+
+.room{
+  padding:250px;
+}
+
+.room p{
+  font-family: circular;
+}
+
+.section h1{
+  font-family: circular-bold;
+  line-height: 74px;
+  letter-spacing: -3px;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+
+#learn-more{
+  padding:20px;
+  width: 200px;
+  border-radius: 100px;
+  text-align: center;
+  background-color: #28B954;
+  font-family: circular-bold;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#learn-more a{
+  color:white;
+  text-decoration: none;
+}
+
+#learn-more:hover{
+  background-color:#2FD75F;
+}
+
+
+
+
+.skip{
+  text-align: right;
+}
+
+
+.left-outline a{
+  text-align: center;
+}
+
+h1 a{
+  font-weight: 900;
+  color:white;
+  text-decoration: none;
+}
+
+h1 a:visited{
+  text-decoration: none;
+  color:white;
+}
+
+p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#container{
+/*Size of the nav bar height*/
+  /*Originally just this*/
+  display: flex;
+}
+
+section{
+  width: 50%;
+}
+
+.left-outline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+  /* border: solid 2px orange; */
+}
+
+.left-outline img{
+  /* margin-top: -10%; */
+  max-width: 50%;
+  height:auto;
+  width:auto;
+  border: 10px solid #282b2d;
+}
+
+/*
+#futureTech, #unitrans, #roboto, #mobileDesktop, #coreModel{
+  border: 10px solid #282b2d;
+} */
+
+/*Had to use this to cheat way through of having the scroll types
+switch whent he screen size was on mobile. On web I have it so the
+right page content is scrollable, but the page itself is not.*/
+
+@media (max-width: 700px){
+  #logo{
+    left:0;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  #time{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+  .left-outline{
+    width:100%;
+    height:auto;
+    float:none;
+  }
+
+  #right-outline{
+    position: absolute;
+    top:100%;
+    width:100%;
+    float:none;
+  }
+
+  #right-contents p img{
+    display: none;
+  }
+
+  .left-outline img{
+    /* margin-top: -10%; */
+    max-width: 80%;
+    height:auto;
+    width:auto;
+  }
+}
+
+
+#right-outline{
+  display: flex;
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 10%;
+  right:0px;
+  height: 65%;
+  display: block;
+}
+
+#right-contents{
+  padding: 60px 60px 60px 60px;
+}
+
+#right-outline::-webkit-scrollbar {
+    display: none;
+}
+
+#right-outline img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  width:75%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li{
+  list-style-type: none;
+}
