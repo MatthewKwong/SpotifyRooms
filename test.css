@@ -1,0 +1,90 @@
+.rightbody{
+  background-color:white;
+}
+
+.left-blue{
+  background-color: #23b5d3;
+}
+
+nav{
+  position: fixed;
+  top:0;
+  background-color: #282b2d;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+}
+
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+#time{
+  text-align: center;
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#container{
+/*Size of the nav bar height*/
+  /*Originally just this*/
+  display: flex;
+}
+
+section{
+  width: 50%;
+}
+
+.left-outline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+}
+
+.right-outline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 10%;
+  right:0px;
+  height: 65%;
+  display: block;
+}
+
+.left-outline img{
+  /* margin-top: -10%; */
+  max-width: 50%;
+  height:auto;
+  width:auto;
+  border: 10px solid #282b2d;
+}
+
+
+.right-contents{
+  padding: 60px 60px 60px 60px;
+}
+
+.right-outline::-webkit-scrollbar {
+    display: none;
+}
+
+.right-outline img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  width:75%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 

@@ -73,7 +73,7 @@ nav ul #contact a{
   margin: auto 0;
   height: 100vh;
   width: 100%;
-  border:solid 2px black;
+  /* border:solid 2px black; */
   box-sizing: border-box;
 }
 
@@ -146,88 +146,46 @@ nav ul #contact a{
 .works{
   background: url('images/squiggle-bottom.svg') no-repeat;
   background-size: cover;
-  padding-top:10%;
-  padding-left:5%;
-  padding-right:5%;
-
-  /* box-sizing: border-box;
-  border: solid 2px blue; */
   display: flex;
   position: relative;
 }
 
-.works-right{
-  /* box-sizing: border-box;
-  border: solid 2px orange; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.join-or-host{
+  height: 75px;
+  font-size: 25px;
+  font-family: circular-bold;
+  width: 100%;
   position: absolute;
-  right: -5%;
-  top: 30%;
-  width: 60%;
+  /* background-color: #181818; */
+  text-align: center;
 }
 
-.works-right img{
-  max-width: 70%;
-  height:auto;
-  width:auto;
-  display: block;
-}
-
-.works-left{
-  position: absolute;
-  left:0;
-  padding-left: 5%;
+.join-or-host #host-left{
   width: 50%;
+  float: left;
+  color:white;
+}
+
+.join-or-host #host-right{
+  width: 50%;
+  float: right;
+  color:#D8D8D8;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.skip{
+.vote{
   background: url('images/footer.svg') no-repeat;
   background-size: cover;
-  padding-top:5%;
-  padding-left:5%;
-  padding-right:5%;
 
-  text-align: right;
+  display: flex;
+  position: relative;
 }
-
-.skip p{
-  width:45%;
-  float: right;
-}
-
-
 
 
 
 /* half half */
 
-#container{
+.container{
 /*Size of the nav bar height*/
   /*Originally just this*/
   display: flex;
@@ -267,11 +225,6 @@ section{
     display: none;
   }
 
-  #time{
-    font-size: 16px;
-    text-align: center;
-  }
-
   p{
     font-size: 15px;
   }
@@ -282,14 +235,14 @@ section{
     float:none;
   }
 
-  #right-outline{
+  .right-outline{
     position: absolute;
     top:100%;
     width:100%;
     float:none;
   }
 
-  #right-contents p img{
+  .right-contents p img{
     display: none;
   }
 
@@ -300,8 +253,7 @@ section{
   }
 }
 
-
-#right-outline{
+.right-outline{
   display: flex;
   text-align: right;
   align-items: center;
@@ -313,15 +265,15 @@ section{
   display: block;
 }
 
-#right-contents{
+.right-contents{
   padding: 60px 60px 60px 60px;
 }
 
-#right-outline::-webkit-scrollbar {
+.right-outline::-webkit-scrollbar {
     display: none;
 }
 
-#right-outline img{
+.right-outline img{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,31 +287,92 @@ section{
 
 
 
-.join-or-host{
-  height: 75px;
-  font-size: 25px;
-  font-family: circular-bold;
-  width: 100%;
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* CLEAN VERSION - IMAGE RIGHT - TEXT LEFT */
+
+
+
+
+section{
+  width: 50%;
+}
+
+.image-right-outline{
+  position: relative;
+  margin-left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+}
+
+.text-left-outline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  /* background-color: #181818; */
-  text-align: center;
+  margin-top: 10%;
+  left:0;
+  height: 65%;
+  display: block;
 }
 
-.join-or-host #host-left{
-  width: 50%;
-  float: left;
-  color:white;
+.image-right-outline img{
+  max-width:35%;
+  height:auto;
+  width:auto;
 }
 
-.join-or-host #host-right{
-  width: 50%;
-  float: right;
-  color:#D8D8D8;
+
+.text-left-contents{
+  padding-left: 10%;
+  padding-right: 10%;
 }
+
+.text-left-outline::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  footer{
   position: absolute;
-  margin-top:-125px;
+  margin-top:-120px;
   text-align: center;
   width: 100%;
   color:white;
