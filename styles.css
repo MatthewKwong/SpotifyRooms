@@ -11,18 +11,34 @@
   display: none;
 }
 
+body, html{
+  height: 100%;
+  margin: 0;
+}
+
+nav{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 50px;
+  background-color: #181818;
+  /* opacity: .5; */
+}
+
 .section{
+  margin: auto 0;
   height: 100vh;
+  width: 100%;
   border:solid 2px black;
   box-sizing: border-box;
 }
 
-.room{
-  padding:250px;
-}
-
-.room p{
+.section p{
+  color:#555555;
   font-family: circular;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 50px;
 }
 
 .section h1{
@@ -33,6 +49,26 @@
   font-weight: 900;
 }
 
+.room{
+  padding-top:12.5%;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+.room #right{
+  position: absolute;
+  height:100%;
+  top:0px;
+  right: 0;
+  z-index: -1;
+}
+
+.room p{
+  line-height: 80px;
+  font-size: 25px;
+  color:#555555;
+  font-family: circular;
+}
 
 #learn-more{
   padding:20px;
@@ -57,32 +93,42 @@
 
 
 
+.purpose{
+  background: url('images/squiggle-top.svg') no-repeat;
+  background-size: cover;
+  padding-top:10%;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+.works{
+  background: url('images/squiggle-bottom.svg') no-repeat;
+  background-size: cover;
+  padding-top:10%;
+  padding-left:5%;
+  padding-right:5%;
+}
 
 .skip{
+  background: url('images/footer.svg') no-repeat;
+  background-size: cover;
+  padding-top:5%;
+  padding-left:5%;
+  padding-right:5%;
+
   text-align: right;
 }
 
-
-.left-outline a{
-  text-align: center;
+.skip p{
+  width:45%;
+  float: right;
 }
 
-h1 a{
-  font-weight: 900;
-  color:white;
-  text-decoration: none;
-}
 
-h1 a:visited{
-  text-decoration: none;
-  color:white;
-}
 
-p{
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-}
+
+
+/* half half */
 
 #container{
 /*Size of the nav bar height*/
@@ -92,6 +138,11 @@ p{
 
 section{
   width: 50%;
+}
+
+
+.left-green{
+  background-color: #28b954;
 }
 
 .left-outline{
@@ -104,20 +155,11 @@ section{
 
 .left-outline img{
   /* margin-top: -10%; */
-  max-width: 50%;
+  max-width: 40%;
   height:auto;
   width:auto;
-  border: 10px solid #282b2d;
 }
 
-/*
-#futureTech, #unitrans, #roboto, #mobileDesktop, #coreModel{
-  border: 10px solid #282b2d;
-} */
-
-/*Had to use this to cheat way through of having the scroll types
-switch whent he screen size was on mobile. On web I have it so the
-right page content is scrollable, but the page itself is not.*/
 
 @media (max-width: 700px){
   #logo{
@@ -155,7 +197,6 @@ right page content is scrollable, but the page itself is not.*/
   }
 
   .left-outline img{
-    /* margin-top: -10%; */
     max-width: 80%;
     height:auto;
     width:auto;
@@ -195,6 +236,26 @@ right page content is scrollable, but the page itself is not.*/
   margin-right: auto;
 }
 
-li{
-  list-style-type: none;
+
+
+.join-or-host{
+  height: 75px;
+  font-size: 25px;
+  font-family: circular-bold;
+  width: 100%;
+  position: absolute;
+  /* background-color: #181818; */
+  text-align: center;
+}
+
+.join-or-host #host-left{
+  width: 50%;
+  float: left;
+  color:white;
+}
+
+.join-or-host #host-right{
+  width: 50%;
+  float: right;
+  color:#D8D8D8;
 }
