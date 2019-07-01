@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name = "viewport" content = "width=device-width", initial-scale="1.0">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Spotify Rooms - A Prototype Feature</title>
@@ -15,7 +16,7 @@
     <nav>
       <ul>
         <li><a href = "https://invis.io/HSSRA1LG4TY">Prototype</a></li>
-        <li id = "contact"><a href = "mailto:&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Contact</a></li>
+        <li id = "contact"><a href = "mailto:&#109;&#097;&#116;&#116;&#104;&#101;&#119;&#114;&#107;&#119;&#111;&#110;&#103;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Contact</a></li>
       </ul>
     </nav>
 
@@ -24,38 +25,45 @@
       <h1>Spotify Rooms</h1>
 
       <p>A new exciting way to play music<br>
-      Idea, prototype, and images created by Matthew Kwong</p>
+      Idea, prototype, and images created by <a href = "https://open.spotify.com/user/matthewkwong?si=Eco9zJqDQiCxgrQ3zaIRuA" target="_blank">Matthew Kwong</a></p>
 
       <div id = "learn-more">
-        <a href = "#purpose">LEARN MORE</a>
+        <a href = "#works">LEARN MORE</a>
       </div>
 
       <img src = "images/test1.png" id = "right">
     </div>
 
     <!-- 2 Purposes -->
-    <div class = "section purpose">
+
+    <div class = "section purpose" id = "purpose">
       <img src = "images/top-right.svg" id = "top-right-svg">
 
-        <p>Change the way you <b>drive. party. live.</b></p>
+      <div class = "container">
 
-        <img src = "" alt = "drive">
-        <img src = "" alt = "party">
-        <img src = "" alt = "live">
+        <section class = "left-outline">
+          <img src = "images/iphone.png" alt = "iphone animation" width = "500" height = "500">
+        </section>
+
+        <section class = "right-outline">
+          <article class = "right-contents">
+            <div id = "purpose-content">
+              <h1>Change the way you</h1>
+              <h2 id = "first">Drive</h2>
+              <h2 id = "second">Party</h2>
+              <h2 id = "third">Share</h2>
+            </div>
+          </article>
+        </section>
+      </div>
+
     </div>
 
+
+
+
+
     <!-- 3 How It Works -->
-    <!-- <div class = "section works">
-      <h1>How It Works</h1>
-
-      <p>Eliminate the hassle of using one phone to control the party <br>
-      With Spotify Rooms, everyone is in control <br>
-      To join a room, enter the unique 4 digit unique passcode</p>
-
-      <img src = "images/people.svg" id = "people">
-    </div> -->
-
-
 
 
 
@@ -67,9 +75,9 @@
 
        <article class = "text-left-contents">
          <h1>How It Works</h1>
-         <p>Eliminate the hassle of using one phone to control the party</p>
-         <p>With Spotify Rooms, everyone is in control</p>
-         <p>To join a room, enter the uniquely generated 4 digit passcode</p>
+         <p>Eliminate the hassle of using one phone to control the party.
+           With Spotify Rooms, everyone is in control.
+           To join a room, enter the uniquely generated 4 digit passcode</p>
        </article>
      </section>
 
@@ -119,38 +127,36 @@
 
 
   <!--  Part 2-->
-  <div id = "animation-wrapper">
-    <div class = "section">
+  <!-- <div id = "animation-wrapper"> -->
       <div class = "container">
 
-        <div class = join-or-host>
-          <div id = "host-not">
-            <h2><a id = "host-animation">Host the Party</a></h2>
-          </div>
+        <div class = "left-outline-join">
+          <section  id = "left-side" class = "text-left-outline-join">
 
-          <div id = "join-selected">
-            <h2><a>Join a Room</a></h2>
-          </div>
-        </div>
+            <div id = "host-not">
+              <h2><a id = "host-animation">Host the Party</a></h2>
+            </div>
 
-
-        <div class = "section container">
-          <section class = "text-left-outline">
-            <article class = "text-left-contents">
+            <article class = "text-left-contents-join">
               <h1>Join a Room</h1>
               <p>Using your own phone, enter the unique 4 digit
-                 generated code to join a room and start the party.</p>
+                 generated code to join a room and let the party begin.</p>
             </article>
           </section>
-
-          <section class = "image-right-outline green-bg">
-            <img src = "images/vote.gif" alt = "gif" id = "vote" width = "300" height = "300">
-          </section>
         </div>
-      </div>
-    </div>
-  </div>
 
+          <section id = "right-side">
+            <div class = "image-right-outline green-bg" >
+            <img src = "images/iphone.png" alt = "gif" id = "vote" width = "300" height = "300">
+
+            <div id = "join-selected">
+              <h2><a>Join a Room</a></h2>
+            </div>
+          </div>
+          </section>
+
+      </div>
+  <!-- </div> -->
 
 
       <!-- 5 Skip -->
