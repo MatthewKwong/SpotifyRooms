@@ -2,26 +2,32 @@ console.log("javascript is active!");
 $(document).ready(function() {
 
   $('#join-animation').click(function(){
-      if ($('#animation-wrapper').is(':hidden')) {
-         $('#animation-wrapper').show('slide',{direction:'left'},1000);
+      if ($('#left-side').is(':hidden')) {
+         $('#left-side').show('slide',{direction:'down'},1000);
+         $('#right-side').show('slide',{direction:'up'},1000);
       }
       else {
-         $('#animation-wrapper').hide('slide',{direction:'left'},1000);
+         $('#left-side').hide('slide',{direction:'up'},1000);
+         $('#right-side').show('slide',{direction:'up'},1000);
       }
       console.log("join is active!");
   });
 
   $('#host-animation').click(function(){
-    console.log("LOL");
-      if ($('#animation-wrapper').is(':hidden')) {
-         $('#animation-wrapper').show('slide',{direction:'left'},1000);
-      }
-      else {
-         $('#animation-wrapper').hide('slide',{direction:'left'},1000);
-      }
-      console.log("join is active!");
+    if ($('#left-side').is(':hidden')) {
+       $('#left-side').show('slide',{direction:'down'},1000);
+       $('#right-side').show('slide',{direction:'up'},1000);
+    }
+    else {
+       $('#left-side').hide('slide',{direction:'up'},1000);
+       $('#right-side').hide('slide',{direction:'down'},1000);
+    }
+    console.log("join is active!");
   });
 
-
-
+  $("#learn-more").click(function(){
+    $('html, body').animate({
+      scrollTop:$("#purpose").offset().top
+    }, 1500);
+  });
 });
