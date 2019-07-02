@@ -505,11 +505,6 @@ section{
   padding-top:2%;
 }
 
-.image-right-outline img{
-  max-width:80%;
-  height:auto;
-  width:auto;
-}
 
 
 
@@ -521,11 +516,11 @@ section{
 
 }
 
-.image-right-outline #vote{
+/* .image-right-outline #vote{
   max-width:40%;
   height:auto;
   width:auto;
-}
+} */
 
 
 .text-left-contents{
