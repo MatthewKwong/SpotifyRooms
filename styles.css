@@ -2,9 +2,15 @@
   font-family: 'circular';
   src: url('circular.ttf'); /* IE9 Compat Modes */
 }
+
 @font-face {
   font-family: 'circular-bold';
   src: url('circular-bold.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'WorkSans-ExtraBold';
+  src: url('WorkSans-ExtraBold.ttf'); /* IE9 Compat Modes */
 }
 
 ::-webkit-scrollbar {
@@ -73,7 +79,7 @@ nav ul #contact a{
   margin: auto 0;
   height: 100vh;
   width: 100%;
-  border:solid 2px black;
+  /* border:solid 2px black; */
   box-sizing: border-box;
 }
 
@@ -153,9 +159,23 @@ nav ul #contact a{
 }
 
 #purpose-content{
+  /* background: url('images/change-the-way.svg') no-repeat; */
+  /* background-size:cover; */
+  /* border: solid 2px blue; */
   position: absolute;
-  border: solid 2px black;
+  width: 100%;
+  height: 100%;
+  left:0;
+  padding-left: 15%;
+  /* z-index: 1; */
 }
+
+#change-the-way-bg{
+  position: absolute;
+  z-index: -1;
+  left:0;
+}
+
 
 #top-right-svg{
   position: absolute;
@@ -164,18 +184,31 @@ nav ul #contact a{
   right:0;
 }
 
-.purpose h1{
+#purpose-content h1{
   font-family: circular;
+  color:white;
+  font-size: 40px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 900;
+  margin-top:8%;
 }
-.purpose h2{
-  font-family: circular-bold;
-  font-size: 100px;
-  line-height: 50px;
+#purpose-content h2:first-of-type{
+  margin-top:50px;
 }
+
+#purpose-content h2{
+  color:white;
+  font-family: WorkSans-ExtraBold;
+  font-size: 90px;
+  line-height: 40px;
+  font-weight: 900;
+}
+
+
 
 
 .works{
-
   background: url('images/squiggle-bottom.svg') no-repeat;
   background-size: cover;
   display: flex;
@@ -243,7 +276,8 @@ nav ul #contact a{
   /* z-index:2; */
 }
 
-#host-animation a{
+
+a{
   cursor: pointer !important;
   display: block;
 }
@@ -327,8 +361,10 @@ section{
   align-items: center;
   justify-content: center;
   height:100vh;
+
   /* border: solid 2px orange; */
 }
+
 
 .left-outline img{
   /* margin-top: -10%; */
@@ -386,6 +422,7 @@ section{
   height: 65%;
   display: block;
 }
+
 
 .right-contents{
   padding-left: 15%;
@@ -461,10 +498,24 @@ section{
   display: block;
 }
 
+.purpose .text-left-outline{
+  padding-top:2%;
+}
+
 .image-right-outline img{
   max-width:80%;
   height:auto;
   width:auto;
+}
+
+
+
+.works-image-right-outline img{
+  max-width:80%;
+  height:auto;
+  width:auto;
+  padding-right: 10%;
+
 }
 
 .image-right-outline #vote{
@@ -517,9 +568,6 @@ section{
   padding-top: 25%;
   height: 65%;
 }
-
-
-
 
  footer{
   position: absolute;
