@@ -25,9 +25,11 @@ $(document).ready(function() {
     console.log("join is active!");
   });
 
+  //scroll feature  - Learn More
   $("#learn-more").click(function(){
     $('html, body').animate({
       scrollTop:$("#purpose").offset().top
-    }, 1500);
+    }, 1000);
   });
+
 });

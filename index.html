@@ -23,8 +23,8 @@
     <div class = "section room">
       <h1>Spotify Rooms</h1>
 
-      <p>A new exciting way to play music<br>
-      Idea, prototype, and images created by <a href = "https://open.spotify.com/user/matthewkwong?si=Eco9zJqDQiCxgrQ3zaIRuA" target="_blank">Matthew Kwong</a></p>
+      <p>A new exciting way to play music</p>
+      <p>Idea, prototype, and images created by <b>Matthew Kwong</b></p>
 
       <div id = "learn-more">
         <a href = "#works">LEARN MORE</a>
@@ -36,7 +36,7 @@
     <!-- 2 Purposes -->
     <img src="images/top-right.svg" id = "top-right-svg" alt = "top-right shape">
 
-    <div class = "section purpose container">
+    <div class = "section purpose container" id = "purpose">
       <section class = "text-left-outline">
         <article class = "text-left-contents">
           <div id = "purpose-content">
@@ -95,7 +95,6 @@
 
 
 
-
     <!-- 4 How to Host / Join -->
     <div class = "section">
       <div class = "container">
@@ -112,8 +111,13 @@
 
         <section class = "left-outline green-bg">
           <!-- <div id = "host-iphone-background">  </div> -->
-          <img src = "images/host.gif" alt = "iphone animation" height = "450" style = "z-index:1;" >
-          <img src = "images/iphone.png" alt = "iphone animation" height = "600" style = "position:absolute">
+          <!-- <img src = "images/host.gif" alt = "iphone animation" height = "450" style = "z-index:1;" > -->
+          <video height="450" playsinline autoplay muted loop style = "z-index:3;">
+             <source src="images/create-room.mp4" type="video/mp4">
+             Your browser does not support HTML5 video.
+          </video>
+
+          <img src = "images/iphone.png" alt = "iphone animation" height = "600" style = "position:absolute; z-index: 0;">
 
         </section>
 
@@ -150,8 +154,11 @@
 
           <section id = "right-side">
             <div class = "image-right-outline green-bg" >
-            <img src = "images/join.gif" alt = "joining a room gif" height = "450" style = "z-index:2;" >
-            <img src = "images/iphone.png" alt = "iphone animation" height = "600" style = "position:absolute; z-index:1;">
+              <video height="450" playsinline autoplay muted loop style = "z-index:3;">
+                 <source src="images/join-a-room.mp4" type="video/mp4">
+                 Your browser does not support HTML5 video.
+              </video>
+              <img src = "images/iphone.png" alt = "iphone animation" height = "600" style = "position:absolute; z-index:0;">
 
 
             <div id = "join-selected">
