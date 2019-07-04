@@ -361,6 +361,39 @@ section{
   width: 50%;
 }
 
+/*2 - Purpose Page */
+.purpose .text-left-outline{
+  padding-top:2%;
+}
+
+
+#purpose-section img{
+  max-width:80%;
+  height:auto;
+  width:auto;
+  padding-right: 10%;
+}
+
+.purpose-image-right-outline{
+  position: relative;
+  margin-left: 40%;
+  width: 100%;
+  display: flex;
+  min-height:100vh;
+  /* border:solid 2px red; */
+  align-items: center;
+  justify-content: center;
+}
+
+.purpose-image-right-outline img{
+  max-width:80%;
+  height:auto;
+  width:auto;
+  padding-right: 10%;
+}
+
+
+
 
 .green-bg{
   background-color: #28b954;
@@ -373,9 +406,6 @@ section{
   height:100vh;
   z-index: -1;
 }
-
-
-
 
 
 @media (max-width: 700px){
@@ -477,6 +507,12 @@ section{
   width: 50%;
 }
 
+/* change the width of the right side of the right side of the purpose page */
+#works-section{
+  margin-left: 30%;
+  width: 100%;
+}
+
 .image-right-outline{
   position: relative;
   margin-left: 50%;
@@ -484,6 +520,7 @@ section{
   align-items: center;
   justify-content: center;
   min-height:100vh;
+  /* border:solid 2px red; */
 }
 
 .left-outline{
@@ -502,10 +539,6 @@ section{
   display: block;
 }
 
-.purpose .text-left-outline{
-  padding-top:2%;
-}
-
 
 
 
@@ -514,7 +547,6 @@ section{
   height:auto;
   width:auto;
   padding-right: 10%;
-
 }
 
 /* .image-right-outline #vote{
