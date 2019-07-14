@@ -6,14 +6,62 @@
   body {
     overflow-x: hidden;
   }
-
-  #people {
-    display: none;
+  nav{
+    z-index: 10;
   }
+
+
+
+    section{
+      width: 100%;
+    }
+
+
+
+
+
+
+    .left-outline img {
+      max-width: 60%;
+      height: auto;
+      width: auto;
+    }
+
+    .left-outline video {
+      max-width: 50%;
+      height: auto;
+      width: auto;
+    }
+
+    .image-right-outline video {
+      max-width: 85%;
+      height: auto;
+      width: auto;
+    }
+
+    .image-right-outline img {
+      max-width: 100%;
+      height: auto;
+      width: auto;
+    }
+
+    .left-outline-join p, .section p {
+      font-size: 20px;
+      /* line-height: 20px; */
+    }
+
+    .container {
+      width: 100% !important;
+    }
+
+  /* #people {
+    display: none;
+  } */
 
   #top-right-svg {
     display: none;
   }
+
 
   .section h1 {
     font-size: 60px;
@@ -25,14 +73,16 @@
   /*  */
   /*  */
   /*  */
+
   /*  */
   /*  */
   /*  */
   .room h1 {
-    margin-top: 55%;
+    margin-top: 40%;
   }
 
   .room {
+    height:100vh;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -45,8 +95,60 @@
   .purpose {
     /* background-color: #28b954;
     width: 100%; */
+    /* border: solid 2px red; */
     background: url('images/squiggle-top-white.svg') no-repeat;
     background-size: cover;
+  }
+
+  #purpose-content{
+    /* border: solid 2px red; */
+    padding-left: 10%;
+    width: 80%;
+  }
+
+  #purpose-content h1{
+    font-size: 2em;
+  }
+
+  #purpose-content h2{
+    font-size: 80px;
+    line-height: 30px;
+  }
+
+  #purpose-section img {
+    max-width: 95%;
+    height: auto;
+    width: auto;
+  }
+
+  #combined{
+    /* left:15%; */
+    top:160vh;
+  }
+
+
+/* 2 WORKS */
+
+  #works{
+    text-align: right;
+    padding-left: 5%;
+    padding-right:5%;
+    /* border: solid 2px red; */
+    color:white;
+    margin-top: 35%;
+  }
+
+  #works h1{
+    font-size: 45px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    /* border: solid  2px black; */
+  }
+
+  #works p{
+    color:white;
+    font-size: 20px;
+    line-height: 40px;
   }
 
   .works {
@@ -54,38 +156,163 @@
     width: 100%; */
     background: url('images/squiggle-bottom-white.svg') no-repeat;
     background-size: cover;
+
   }
 
-  .left-outline img {
-    max-width: 60%;
-    height: auto;
-    width: auto;
+  .image-right-outline {
+    margin: 0;
   }
 
-  .left-outline video {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+  #people{
+    padding-right: 0;
+    position: absolute;
+    top:60vh;
+    /* left: 0; */
+    max-width: 80%;
+    /* display: none; */
+    /* border: solid 2px red; */
   }
 
-  .image-right-outline video {
-    max-width: 85%;
-    height: auto;
-    width: auto;
-  }
 
-  .image-right-outline img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
-  }
+/* ANIMATION  */
+#host-and-join{
+  height: 150vh;
+  /* border: solid 2px red; */
+}
 
-  .left-outline-join p, .section p {
-    font-size: 15px;
-    line-height: 20px;
-  }
+.join-or-host{
+  display: none;
+}
 
-  .container {
-    width: 100% !important;
-  }
+
+
+#host-video{
+  top: 380vh;
+  height: 80vh;
+  /* border: solid 2px purple; */
+  position: absolute;
+}
+
+
+#host-text{
+  text-align: left;
+}
+
+
+
+/* JOIN */
+
+
+
+#left-side{
+  width: 100%;
+
+}
+
+.text-left-contents-join{
+  padding-top: 0;
+}
+
+.section p{
+  line-height: 45px;
+
+}
+
+#left-side  {
+  /* border: solid 2px red; */
+  top: 475vh;
+  width: 100%;
+  display: block;
+  height: 85vh;
+}
+
+
+#right-side{
+  /* border: solid 2px black; */
+  top: 560vh;
+  /* width: 100%; */
+  display: block;
+  z-index: -1;
+  height: 80vh !important;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#right-side img{
+
+  max-width: 60%;
+}
+
+#right-side video{
+  max-width: 50%;
+}
+
+#host-not, #join-selected{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VOTE TO SKIP */
+#vote-to-skip{
+  position: absolute;
+  /* display: none; */
+  /* height: 120vh; */
+  top:640vh;
+  /* border: solid 2px red; */
+}
+
+#vote-to-skip-text{
+  padding-top: 0;
+}
+
+
+ #vote-right{
+   top: 100vh;
+   height: 100vh;
+   background-color: #28b954;
+   margin-left: 0;
+ }
+
+ #vote-right img{
+   /* display: none; */
+   max-width: 60%;
+ }
+
+ #vote-right video{
+   /* display: none; */
+   max-width: 50%;
+ }
+
+ footer{
+   /* display: none; */
+   top: 843vh;
+   /* bottom: -420vh; */
+   font-size: 17px;
+   color: white;
+ }
+
+
+ footer a{
+   color: white;
+ }
+
+ #footer{
+   display: none;
+ }
 }
