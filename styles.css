@@ -20,9 +20,9 @@
   display: none;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
+html, body {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -124,6 +124,8 @@ nav ul #contact a {
   height: 100%;
   top: 0px;
   right: 0;
+  z-index: -1;
+  border: solid 2px red;
 }
 
 .room p {
@@ -162,6 +164,7 @@ nav ul #contact a {
 }
 
 #purpose-content {
+  /* border: solid 2px blue; */
   /* background: url('images/change-the-way.svg') no-repeat; */
   /* background-size:cover; */
   /* border: solid 2px blue; */
@@ -174,6 +177,7 @@ nav ul #contact a {
 }
 
 #change-the-way-bg {
+  max-width: 100%;
   position: absolute;
   z-index: -1;
   left: 0;
@@ -219,16 +223,13 @@ nav ul #contact a {
   width: auto;
 }
 
-.purpose-image-right-outline {
+
+
+#people {
+  border: solid 2px red;
   position: absolute;
-  /* SHARE DRIVE PARTY */
-  margin-left: 30%;
-  width: 100%;
-  display: flex;
-  min-height: 100vh;
-  /* border:solid 2px blue; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  right: 0;
+  top: 120vh;
 }
 
 .purpose-image-right-outline img {
@@ -272,6 +273,23 @@ nav ul #contact a {
   color: #D8D8D8;
   text-decoration: none;
   transition: 0.3s;
+  /*animation */
+  animation-name: flash;
+  animation-duration: .99s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes flash {
+  from {
+    color: #D8D8D8;
+  }
+
+  to {
+    color: #28B954;
+  }
 }
 
 .join-or-host #join-not a:hover {
@@ -359,14 +377,14 @@ a {
 }
 
 #vote-right {
-  background: url('images/iphone.png') center no-repeat;
   /* border: solid 2px red; */
   position: relative;
   margin-left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  box-sizing: border-box;
+  /* min-height: 100vh; */
 }
 
 /* half half */
@@ -390,43 +408,6 @@ section {
   justify-content: center;
   height: 100vh;
   z-index: -1;
-}
-
-@media (max-width: 700px) {
-  #logo {
-    left: 0;
-  }
-
-  body::-webkit-scrollbar {
-    display: none;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .left-outline {
-    width: 100%;
-    height: auto;
-    float: none;
-  }
-
-  .right-outline {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    float: none;
-  }
-
-  .right-contents p img {
-    display: none;
-  }
-
-  .left-outline img {
-    max-width: 80%;
-    height: auto;
-    width: auto;
-  }
 }
 
 .right-outline {
@@ -570,6 +551,14 @@ section {
   padding-right: 15%;
   padding-top: 25%;
   height: 65%;
+}
+
+#footer {
+  bottom: -5px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: -1;
 }
 
 footer {

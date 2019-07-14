@@ -1,0 +1,91 @@
+@media only screen and (max-width: 600px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #people {
+    display: none;
+  }
+
+  #top-right-svg {
+    display: none;
+  }
+
+  .section h1 {
+    font-size: 60px;
+  }
+
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  .room h1 {
+    margin-top: 55%;
+  }
+
+  .room {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #right {
+    display: none;
+  }
+
+  /* Purpose */
+  .purpose {
+    /* background-color: #28b954;
+    width: 100%; */
+    background: url('images/squiggle-top-white.svg') no-repeat;
+    background-size: cover;
+  }
+
+  .works {
+    /* background-color: #28b954;
+    width: 100%; */
+    background: url('images/squiggle-bottom-white.svg') no-repeat;
+    background-size: cover;
+  }
+
+  .left-outline img {
+    max-width: 60%;
+    height: auto;
+    width: auto;
+  }
+
+  .left-outline video {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  .image-right-outline video {
+    max-width: 85%;
+    height: auto;
+    width: auto;
+  }
+
+  .image-right-outline img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  .left-outline-join p, .section p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+}
