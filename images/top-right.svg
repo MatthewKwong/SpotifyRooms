@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="361.56" height="143.46" viewBox="0 0 361.56 143.46"><defs><style>.cls-1{fill:#1cb954;}</style></defs><title>top-right</title><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M0,0,65.28,104.06a83.22,83.22,0,0,0,80.34,38.88l215.94-23.62V0Z"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 361.6 143.5" style="enable-background:new 0 0 361.6 143.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1CB954;}
+</style>
+<g id="Layer_1">
+	<title>top-right</title>
+	<g>
+		<path class="st0" d="M0,0l65.3,104.1c17,27.4,48.3,42.6,80.3,38.9l215.9-23.6V0H0z"/>
+	</g>
+</g>
+<g id="Extension">
+	<polygon class="st0" points="361.6,119.3 380.6,117.5 380.6,0 361.6,0 	"/>
+</g>
+</svg>
