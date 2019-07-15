@@ -134,12 +134,14 @@
   } */
 
   .room {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     height:100vh;
-    padding-top:0;
-    /* border: solid 2px red; */
+    top: -20px;
+    padding-top: 0;
+    border: solid 2px red;
   }
 
   #learn-more{
@@ -368,7 +370,7 @@
 
  footer{
    /* display: none; */
-   top: 820vh;
+   top: 818vh;
    line-height: 15px;
    font-size: 20px;
    color: white;
