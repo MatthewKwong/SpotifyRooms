@@ -22,7 +22,7 @@
     padding: 13px;
   }
 
-  nav #nav-button label:hover,.nav #nav-check:checked ~ #nav-button label {
+  nav #nav-button label:hover, .nav #nav-check:checked ~ #nav-button label {
   background-color: rgba(0, 0, 0, 0.3);
   height: 25px;
   }
