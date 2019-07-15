@@ -124,8 +124,17 @@ nav #nav-check {
   height: 100%;
   top: 0px;
   right: 0;
-  z-index: -1;
+  z-index: -2;
   /* border: solid 2px red; */
+}
+
+.room #rooms-iphone{
+  z-index: -1;
+  position: absolute;
+  right: 20%;
+  top: 16%;
+  width: 35vh;
+  /* border:solid 2px red; */
 }
 
 .room p {

@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1000px) {
+  .room #rooms-iphone, .room #right, #top-right-svg{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   body::-webkit-scrollbar {
     display: none;
