@@ -128,7 +128,7 @@
   /*  */
   /*  */
   #room-text {
-    margin-top: 20%;
+    margin-top: 15%;
   }
 
   .room {
@@ -253,12 +253,10 @@
 
 /* JOIN */
 
-
-
 #left-side{
   width: 100%;
-
 }
+
 
 .text-left-contents-join{
   padding-top: 0;
@@ -269,18 +267,18 @@
 
 }
 
-#left-side  {
+#left-side {
   /* border: solid 2px red; */
-  top: 475vh;
+  top: 460vh;
   width: 100%;
   display: block;
-  height: 85vh;
+  height: 70vh;
 }
 
 
 #right-side{
   /* border: solid 2px black; */
-  top: 560vh;
+  top: 535vh;
   /* width: 100%; */
   display: block;
   z-index: -1;
@@ -293,7 +291,6 @@
 
 
 #right-side img{
-
   max-width: 60%;
 }
 
@@ -324,7 +321,7 @@
   position: absolute;
   /* display: none; */
   /* height: 120vh; */
-  top:640vh;
+  top:615vh;
   /* border: solid 2px red; */
 }
 
@@ -352,7 +349,7 @@
 
  footer{
    /* display: none; */
-   top: 843vh;
+   top: 820vh;
    /* bottom: -420vh; */
    font-size: 17px;
    color: white;
