@@ -162,7 +162,7 @@
 
   #purpose-content h2{
     /* font-size: 80px; */
-    font-size: 20vw;
+    font-size: 18vw;
     line-height: 30px;
   }
 
@@ -350,8 +350,8 @@
  footer{
    /* display: none; */
    top: 820vh;
-   /* bottom: -420vh; */
-   font-size: 17px;
+   line-height: 15px;
+   font-size: 20px;
    color: white;
  }
 

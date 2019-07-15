@@ -579,16 +579,18 @@ section {
 }
 
 footer {
+  display: inline;
   position: absolute;
   margin-top: -120px;
   text-align: center;
   width: 100%;
   color: white;
-  line-height: 25px;
+  line-height: 20px;
   font-family: circular;
   font-size: 25px;
 }
 
 footer a {
+  display: inline-block;
   color: white;
 }
