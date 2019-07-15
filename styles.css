@@ -23,15 +23,12 @@
 html, body {
   margin: 0px;
   padding: 0px;
-}
-
-body {
   overflow-x: hidden;
 }
 
 nav {
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
   height: 50px;
   background-color: #181818;
@@ -40,42 +37,45 @@ nav {
   color: white;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+nav #nav-header {
+  display: inline;
 }
 
-nav>ul {
-  display: flex;
-}
-
-nav>ul>li {
-  flex: 1;
-}
-
-nav>ul>li:last-of-type {
-  border-right: 1px solid #666;
-}
-
-nav ul li a {
+nav #nav-header #name {
+  display: inline-block;
+  font-size: 22px;
   color: white;
-  display: block;
-  width: 200px;
-  border-left: 1px solid #666;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 10px;
-  text-align: center;
+  padding: 10px;
+}
+nav #nav-header #name a{
+  color: white;
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  opacity: .8;
+nav #nav-button {
+  display: none;
 }
 
-nav ul #contact a {
+nav .nav-links {
+  display: inline;
   float: right;
+  font-size: 18px;
+}
+
+nav .nav-links a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+nav .nav-links a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 24px;
+}
+
+nav #nav-check {
+  display: none;
 }
 
 .section {
@@ -139,7 +139,8 @@ nav ul #contact a {
   margin-top: 5%;
   padding: 20px;
   width: 200px;
-  border-radius: 100px;
+  border-radius: 200px;
+  transition: 0.3s;
   text-align: center;
   background-color: #28B954;
   font-family: circular-bold;
