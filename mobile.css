@@ -129,9 +129,9 @@
   /*  */
 
 
-  /* #room-text {
-    margin-top: 15%;
-  } */
+  #room-text h1 {
+    font-size: 50px;
+  }
 
   .room {
     position: relative;
@@ -139,9 +139,9 @@
     align-items: center;
     justify-content: center;
     height:100vh;
-    top: -30px;
+    /* top: -30px; */
     padding-top: 0;
-    border: solid 2px red;
+    /* border: solid 2px red; */
   }
 
   #learn-more{
