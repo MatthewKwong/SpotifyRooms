@@ -103,6 +103,7 @@ nav #nav-check {
 }
 
 .room {
+  animation: fadein 1.75s;
   padding-top: 12.5%;
   padding-left: 10%;
   padding-right: 10%;
@@ -129,12 +130,22 @@ nav #nav-check {
 }
 
 .room #rooms-iphone{
+  /* animation: fadein 2s; */
   z-index: -1;
   position: absolute;
   right: 20%;
   top: 16%;
   width: 35vh;
   /* border:solid 2px red; */
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
 }
 
 .room p {
