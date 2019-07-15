@@ -157,14 +157,14 @@
   }
 
   #purpose-content h1{
-    font-size: 1.5em;
+    font-size: 1em;
 
   }
 
   #purpose-content h2{
     /* font-size: 80px; */
     font-size: 17vw;
-    line-height: 25px;
+    line-height: 23px;
   }
 
   #purpose-section img {
