@@ -5,66 +5,66 @@
 }
 
 @media only screen and (max-width: 600px) {
-  body::-webkit-scrollbar {
-    display: none;
-  }
+    body::-webkit-scrollbar {
+      display: none;
+    }
 
-  body {
-    overflow-x: hidden;
-  }
+    body {
+      overflow-x: hidden;
+    }
 
 
-  nav #nav-button {
-    display: inline-block;
+    nav #nav-button {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+
+    nav #nav-button label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+
+    nav #nav-button label:hover, .nav #nav-check:checked ~ #nav-button label {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 25px;
+    }
+
+    nav #nav-button label span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+    }
+
+    nav .nav-links {
     position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-
-  nav #nav-button label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-
-  nav #nav-button label:hover, .nav #nav-check:checked ~ #nav-button label {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 25px;
-  }
-
-  nav #nav-button label span {
-  display: block;
-  width: 25px;
-  height: 10px;
-  border-top: 2px solid #eee;
-  }
-
-  nav .nav-links {
-  position: absolute;
-  display: block;
-  width: 100%;
-  background-color: #333;
-  height: 0px;
-  transition: all 0.3s ease-in;
-  overflow-y: hidden;
-  top: 50px;
-  left: 0px;
-  }
-
-  nav .nav-links a {
-  display: block;
-  width: 100%;
-  }
-
-  nav #nav-check:not(:checked) ~ .nav-links {
+    display: block;
+    width: 100%;
+    background-color: #333;
     height: 0px;
-  }
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    }
 
-  nav  #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
+    nav .nav-links a {
+    display: block;
+    width: 100%;
+    }
+
+    nav #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+
+    nav  #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
 
     section{
       width: 100%;
@@ -127,14 +127,24 @@
   /*  */
   /*  */
   /*  */
-  #room-text {
+
+
+  /* #room-text {
     margin-top: 15%;
-  }
+  } */
 
   .room {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height:100vh;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top:0;
+    /* border: solid 2px red; */
+  }
+
+  #learn-more{
+    margin-top: 40px;
+    /* border: solid 2px red; */
   }
 
   #right {
@@ -143,6 +153,9 @@
 
   /* Purpose */
   .purpose {
+    /* Nav bar */
+    padding-top:30px;
+    height: 100vh;
     /* background-color: #28b954;
     width: 100%; */
     /* border: solid 2px red; */
@@ -157,11 +170,15 @@
   }
 
   #purpose-content h1{
-    font-size: 1em;
+    font-size: 2em;
+  }
 
+  #purpose-content h2:first-of-type{
+    padding-top:-10px;
   }
 
   #purpose-content h2{
+    /* border:solid 2px red; */
     /* font-size: 80px; */
     font-size: 17vw;
     line-height: 23px;
@@ -180,6 +197,14 @@
 
 
 /* 2 WORKS */
+  .works {
+    /* background-color: #28b954;
+    width: 100%; */
+    background: url('images/squiggle-bottom-white.svg') no-repeat;
+    background-size: cover;
+    height: 95vh;
+    /* border: solid 2px red; */
+  }
 
   #works{
     text-align: right;
@@ -203,13 +228,6 @@
     line-height: 40px;
   }
 
-  .works {
-    /* background-color: #28b954;
-    width: 100%; */
-    background: url('images/squiggle-bottom-white.svg') no-repeat;
-    background-size: cover;
-
-  }
 
   .image-right-outline {
     margin: 0;
