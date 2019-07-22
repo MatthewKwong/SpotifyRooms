@@ -32,4 +32,8 @@ $(document).ready(function() {
     }, 1000);
   });
 
+
+  $("body").on("contextmenu",function(e){
+      return false;
+  });
 });
