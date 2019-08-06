@@ -1,5 +1,9 @@
 #ignore Mac system files
 *.DS_Store
 
-#ignore Illustrator files
+#ignore Photoshop and Illustrator files
 *.ai
+#.psd
+
+#ignore prototype files
+prototype/
